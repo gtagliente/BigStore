@@ -1,0 +1,45 @@
+MENU LANDING PAGE:
+Requisiti:
+
+- Pagina Web Home con:
+	- offerte del gg
+	- menu speciali
+	- lista di categorie con apertura nuova pag.\accordion
+	- pagina di dettaglio su elementi
+	- funzione aggiungi a carrello
+	- pagina carrello con prodotti inseriti
+	
+	
+	https://freehtmldesigns.com/free-ecommerce-html-website-templates/
+	15. E Shopper		=> Menu dx dispersivo, ma c'è carrello (carino) . C'è tasto compare ma non funziona sulla demo
+
+
+
+	https://freehtmldesigns.com/free-ecommerce-html-website-templates/
+	24. Big store	=> 		Formattazione pagina più compatta(milgiore). Carrello spartano ma funzionante
+	
+	
+	
+Obiettico della pagina:
+
+Mostrare un menu elettronico in una pagina Web.
+Nell'Header della pagina verranno mostrati il nome della pagina, menu per navigazione sulle pagine e carrello.
+Subito sotto ci saranno delle immagini in landing, riguardanti le offerte del giorno.
+Segue il Menu tradizionale suddiviso per
+- macrocategorie
+- ogni macrocategoria avrà delle sottocategorie
+- ogni sottocategoria avr degli elementi
+
+Infine Footer
+
+C:\Users\GBWIN10VPN\Desktop\GT\PhotographPortfolio\src\BlogSystem.Web\App_Start\Identity\ApplicationSignInManager.cs
+
+
+ IList<Google.Apis.Drive.v3.Data.File> driveFiles = listRequest.Execute()
+Line 67:                 .Files;
+Line 68:             Console.WriteLine("Files:");
+
+ Error:"invalid_grant", Description:"Token has been expired or revoked.", Uri:"" 
+ 
+ 
+ 
