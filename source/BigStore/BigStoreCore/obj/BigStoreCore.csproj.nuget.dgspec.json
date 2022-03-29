@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GBWIN10VPN\\Desktop\\GT\\bigstore\\source\\BigStore\\BigStoreCore\\BigStoreCore.csproj": {}
+    "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreCore\\BigStoreCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GBWIN10VPN\\Desktop\\GT\\bigstore\\source\\BigStore\\BigStoreCore\\BigStoreCore.csproj": {
+    "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreCore\\BigStoreCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GBWIN10VPN\\Desktop\\GT\\bigstore\\source\\BigStore\\BigStoreCore\\BigStoreCore.csproj",
+        "projectUniqueName": "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreCore\\BigStoreCore.csproj",
         "projectName": "BigStoreCore",
-        "projectPath": "C:\\Users\\GBWIN10VPN\\Desktop\\GT\\bigstore\\source\\BigStore\\BigStoreCore\\BigStoreCore.csproj",
-        "packagesPath": "C:\\Users\\GBWIN10VPN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GBWIN10VPN\\Desktop\\GT\\bigstore\\source\\BigStore\\BigStoreCore\\obj\\",
+        "projectPath": "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreCore\\BigStoreCore.csproj",
+        "packagesPath": "C:\\Users\\Samsung\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreCore\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\GBWIN10VPN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Samsung\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

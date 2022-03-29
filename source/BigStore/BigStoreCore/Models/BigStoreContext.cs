@@ -7,9 +7,9 @@ namespace BigStoreCore.Models
 {
     public partial class BigStoreContext : DbContext
     {
-        public BigStoreContext()
-        {
-        }
+        //public BigStoreContext()
+        //{
+        //}
 
         public BigStoreContext(DbContextOptions<BigStoreContext> options)
             : base(options)

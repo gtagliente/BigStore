@@ -11,36 +11,31 @@ namespace BigStoreCore.Logic
 {
     public class EFBusinessLayer : IMainBusinessLayer
     {
+        public BigStoreContext _context;
+        public EFBusinessLayer(BigStoreContext context)
+        {
+            _context = context;
+        }
         public async  Task<List<Product>> GetProducts()
         {
-
-            using(BigStoreContext ctx  = new BigStoreContext())  {
-                return await ctx.Products.ToListAsync();
-            }
+                return await _context.Products.ToListAsync();
+            
         }
 
         public async Task<List<Category>> GetCategories()
         {
-            using (BigStoreContext ctx = new BigStoreContext())
-            {
-                return await ctx.Categories.ToListAsync();
-            }
+                return await _context.Categories.ToListAsync();
         }
 
         public async Task<List<MenuDiscount>> GetMenuDiscounts()
         {
-            using (BigStoreContext ctx = new BigStoreContext())
-            {
-                return await ctx.MenuDiscounts.ToListAsync();
-            }
+ 
+                return await _context.MenuDiscounts.ToListAsync();
         }
 
         public async Task<List<Discount>> GetDiscounts()
         {
-            using (BigStoreContext ctx = new BigStoreContext())
-            {
-                return await ctx.Discounts.ToListAsync();
-            }
+                return await _context.Discounts.ToListAsync();
         }
     }
 }

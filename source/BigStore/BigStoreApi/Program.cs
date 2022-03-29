@@ -8,7 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 //builder.Services.AddSingleton < IMainBusinessLayer,MockBusinessLayer > ();
 builder.Services.AddScoped< IMainBusinessLayer, EFBusinessLayer>();
 
-builder.Services.AddDbContext<BigStoreContext>(options => {
+builder.Services.AddDbContext<BigStoreContext>(options =>
+{
     options.UseSqlServer(new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetSection("ConnectionStrings")["DBConnection"]);
 });
 // Add services to the container.
