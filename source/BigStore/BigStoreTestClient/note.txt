@@ -1,0 +1,8 @@
+Per Usare Entity Framework installati:
+Microsoft.Data.SqlClient
+Microsoft.EntityFrameworkCore.Design
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tools
+
+Per lo scaffholding EF DbFirst, bisogna usare il seguente comando su Package Manager Console:
+Scaffold-DbContext "connectionstring" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models

@@ -1,0 +1,15 @@
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreInterfaces\bin\Debug\net6.0\BigStoreInterfaces.deps.json
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreInterfaces\bin\Debug\net6.0\BigStoreInterfaces.dll
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreInterfaces\bin\Debug\net6.0\BigStoreInterfaces.pdb
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreInterfaces\bin\Debug\net6.0\BigStoreCore.dll
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreInterfaces\bin\Debug\net6.0\BigStoreCore.pdb
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreInterfaces\obj\Debug\net6.0\BigStoreInterfaces.csproj.AssemblyReference.cache
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreInterfaces\obj\Debug\net6.0\BigStoreInterfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreInterfaces\obj\Debug\net6.0\BigStoreInterfaces.AssemblyInfoInputs.cache
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreInterfaces\obj\Debug\net6.0\BigStoreInterfaces.AssemblyInfo.cs
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreInterfaces\obj\Debug\net6.0\BigStoreInterfaces.csproj.CoreCompileInputs.cache
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreInterfaces\obj\Debug\net6.0\BigStoreInterfaces.csproj.CopyComplete
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreInterfaces\obj\Debug\net6.0\BigStoreInterfaces.dll
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreInterfaces\obj\Debug\net6.0\refint\BigStoreInterfaces.dll
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreInterfaces\obj\Debug\net6.0\BigStoreInterfaces.pdb
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreInterfaces\obj\Debug\net6.0\ref\BigStoreInterfaces.dll

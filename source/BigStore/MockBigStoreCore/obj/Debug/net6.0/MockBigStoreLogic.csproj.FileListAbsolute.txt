@@ -1,0 +1,17 @@
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\MockBigStoreCore\bin\Debug\net6.0\MockBigStoreLogic.deps.json
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\MockBigStoreCore\bin\Debug\net6.0\MockBigStoreLogic.dll
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\MockBigStoreCore\bin\Debug\net6.0\MockBigStoreLogic.pdb
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\MockBigStoreCore\bin\Debug\net6.0\BigStoreCore.dll
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\MockBigStoreCore\bin\Debug\net6.0\BigStoreInterfaces.dll
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\MockBigStoreCore\bin\Debug\net6.0\BigStoreCore.pdb
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\MockBigStoreCore\bin\Debug\net6.0\BigStoreInterfaces.pdb
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\MockBigStoreCore\obj\Debug\net6.0\MockBigStoreLogic.csproj.AssemblyReference.cache
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\MockBigStoreCore\obj\Debug\net6.0\MockBigStoreLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\MockBigStoreCore\obj\Debug\net6.0\MockBigStoreLogic.AssemblyInfoInputs.cache
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\MockBigStoreCore\obj\Debug\net6.0\MockBigStoreLogic.AssemblyInfo.cs
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\MockBigStoreCore\obj\Debug\net6.0\MockBigStoreLogic.csproj.CoreCompileInputs.cache
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\MockBigStoreCore\obj\Debug\net6.0\MockBigStoreLogic.csproj.CopyComplete
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\MockBigStoreCore\obj\Debug\net6.0\MockBigStoreLogic.dll
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\MockBigStoreCore\obj\Debug\net6.0\refint\MockBigStoreLogic.dll
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\MockBigStoreCore\obj\Debug\net6.0\MockBigStoreLogic.pdb
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\MockBigStoreCore\obj\Debug\net6.0\ref\MockBigStoreLogic.dll
