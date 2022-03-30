@@ -130,3 +130,5 @@ C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStor
 C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreApi\obj\Debug\net6.0\BigStoreApi.pdb
 C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreApi\obj\Debug\net6.0\BigStoreApi.genruntimeconfig.cache
 C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreApi\obj\Debug\net6.0\ref\BigStoreApi.dll
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreApi\bin\Debug\net6.0\BigStoreInterfaces.dll
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreApi\bin\Debug\net6.0\BigStoreInterfaces.pdb

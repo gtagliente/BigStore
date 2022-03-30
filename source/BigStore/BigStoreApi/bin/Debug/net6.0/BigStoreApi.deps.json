@@ -9,6 +9,7 @@
       "BigStoreApi/1.0.0": {
         "dependencies": {
           "BigStoreCore": "1.0.0",
+          "BigStoreInterfaces": "1.0.0",
           "Microsoft.Extensions.Configuration": "6.0.1",
           "Microsoft.Extensions.Configuration.FileExtensions": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
@@ -594,6 +595,14 @@
         "runtime": {
           "BigStoreCore.dll": {}
         }
+      },
+      "BigStoreInterfaces/1.0.0": {
+        "dependencies": {
+          "BigStoreCore": "1.0.0"
+        },
+        "runtime": {
+          "BigStoreInterfaces.dll": {}
+        }
       }
     }
   },
@@ -1066,6 +1075,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "BigStoreCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BigStoreInterfaces/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
