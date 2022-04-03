@@ -16,24 +16,24 @@ namespace BigStoreCore.Logic
         {
             _context = context;
         }
-        public async  Task<List<Product>> GetProducts()
+        public virtual async  Task<List<Product>> GetProducts()
         {
                 return await _context.Products.ToListAsync();
             
         }
 
-        public async Task<List<Category>> GetCategories()
+        public virtual async Task<List<Category>> GetCategories()
         {
                 return await _context.Categories.ToListAsync();
         }
 
-        public async Task<List<MenuDiscount>> GetMenuDiscounts()
+        public virtual  async Task<List<MenuDiscount>> GetMenuDiscounts()
         {
  
                 return await _context.MenuDiscounts.ToListAsync();
         }
 
-        public async Task<List<Discount>> GetDiscounts()
+        public virtual async Task<List<Discount>> GetDiscounts()
         {
                 return await _context.Discounts.ToListAsync();
         }

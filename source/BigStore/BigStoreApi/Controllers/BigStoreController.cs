@@ -3,9 +3,11 @@ using BigStoreCore.Interfaces;
 
 namespace BigStoreApi.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class BigStoreController : Controller
     {
-        private readonly IMainBusinessLayer _layer;
+        public readonly IMainBusinessLayer _layer;
 
         public BigStoreController(IMainBusinessLayer layer)
         {
