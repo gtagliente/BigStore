@@ -4,6 +4,66 @@
     "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreTestClient\\BigStoreTestClient.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreClient\\BigStoreClient.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreClient\\BigStoreClient.csproj",
+        "projectName": "BigStoreClient",
+        "projectPath": "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreClient\\BigStoreClient.csproj",
+        "packagesPath": "C:\\Users\\Samsung\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreClient\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Samsung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "NSwag.CodeGeneration.CSharp": {
+              "target": "Package",
+              "version": "[13.15.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreCore\\BigStoreCore.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -104,6 +164,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreClient\\BigStoreClient.csproj": {
+                "projectPath": "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreClient\\BigStoreClient.csproj"
+              },
               "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreCore\\BigStoreCore.csproj": {
                 "projectPath": "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreCore\\BigStoreCore.csproj"
               }

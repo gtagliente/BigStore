@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using BigStoreCore.Interfaces;
+using BigStoreCore.Models;
 
 namespace BigStoreApi.Controllers
 {
@@ -15,17 +16,17 @@ namespace BigStoreApi.Controllers
         }
 
         //[HttpGet(Name ="Products")]
-        [Route("Products")]
-        public async Task<IActionResult> GetProducts()
+        [HttpGet,Route("Products")]
+        public async Task<List<Product>> GetProducts()
         {
-            return Json(await _layer.GetProducts());
+            return await _layer.GetProducts();
         }
 
         //[HttpGet(Name = "Categories")]
-        [Route("Categories")]
-        public async Task<IActionResult> GetCategories()
+        [HttpGet,Route("Categories")]
+        public async Task<List<Category>> GetCategories()
         {
-            return Json(await _layer.GetCategories());
+            return (await _layer.GetCategories());
         }
     }
 }
