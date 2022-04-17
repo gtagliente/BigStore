@@ -4,14 +4,14 @@
     "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreTestClient\\BigStoreTestClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreCore\\BigStoreCore.csproj": {
+    "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreClient\\BigStoreClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreCore\\BigStoreCore.csproj",
-        "projectName": "BigStoreCore",
-        "projectPath": "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreCore\\BigStoreCore.csproj",
+        "projectUniqueName": "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreClient\\BigStoreClient.csproj",
+        "projectName": "BigStoreClient",
+        "projectPath": "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreClient\\BigStoreClient.csproj",
         "packagesPath": "C:\\Users\\Samsung\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreCore\\obj\\",
+        "outputPath": "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Samsung\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,25 +40,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.Data.SqlClient": {
+            "NSwag.CodeGeneration.CSharp": {
               "target": "Package",
-              "version": "[4.1.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.3, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[6.0.3, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[13.15.10, )"
             }
           },
           "imports": [
@@ -104,8 +88,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreCore\\BigStoreCore.csproj": {
-                "projectPath": "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreCore\\BigStoreCore.csproj"
+              "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreClient\\BigStoreClient.csproj": {
+                "projectPath": "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreClient\\BigStoreClient.csproj"
               }
             }
           }

@@ -9,6 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BigStoreCore", "BigStoreCor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BigStoreTestClient", "BigStoreTestClient\BigStoreTestClient.csproj", "{193A7192-D56C-49AF-89F8-1752D129FB74}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BigStoreApi_CustomerExtended", "BigStoreApi_CustomerExtended\BigStoreApi_CustomerExtended.csproj", "{7BD9CA6F-E126-4B59-A70F-B00047C6F56A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BigStoreCore_CustomerExtended", "BigStoreCore_CustomerExtended\BigStoreCore_CustomerExtended.csproj", "{89D34BB0-69BE-43EF-A91B-30254394CD3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigStoreClient", "BigStoreClient\BigStoreClient.csproj", "{4136FD2E-B230-412B-B150-9C2B95073323}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +33,18 @@ Global
 		{193A7192-D56C-49AF-89F8-1752D129FB74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{193A7192-D56C-49AF-89F8-1752D129FB74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{193A7192-D56C-49AF-89F8-1752D129FB74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BD9CA6F-E126-4B59-A70F-B00047C6F56A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BD9CA6F-E126-4B59-A70F-B00047C6F56A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BD9CA6F-E126-4B59-A70F-B00047C6F56A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BD9CA6F-E126-4B59-A70F-B00047C6F56A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89D34BB0-69BE-43EF-A91B-30254394CD3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89D34BB0-69BE-43EF-A91B-30254394CD3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89D34BB0-69BE-43EF-A91B-30254394CD3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89D34BB0-69BE-43EF-A91B-30254394CD3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4136FD2E-B230-412B-B150-9C2B95073323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4136FD2E-B230-412B-B150-9C2B95073323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4136FD2E-B230-412B-B150-9C2B95073323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4136FD2E-B230-412B-B150-9C2B95073323}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
