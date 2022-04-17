@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BigStoreClient\BigStoreClient.csproj" />
-    <ProjectReference Include="..\BigStoreCore\BigStoreCore.csproj" />
   </ItemGroup>
 
 </Project>

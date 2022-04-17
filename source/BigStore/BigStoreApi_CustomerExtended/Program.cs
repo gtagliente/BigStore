@@ -13,9 +13,18 @@ builder.Services.AddDbContext<BigStoreContext>(options =>
 {
     options.UseSqlServer(new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetSection("ConnectionStrings")["DBConnection"]);
 });
+
+//builder.Services.AddControllersWithViews()
+//    .AddNewtonsoftJson(options =>
+//    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+//);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(
+    c =>
+    {
+        c.UseAllOfToExtendReferenceSchemas();
+    } );
 
 var app = builder.Build();
 
@@ -39,6 +48,11 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.MapControllerRoute(
+    name: "BigStore",
+    pattern: "{controller=Home}/{action=Index}/{id?}"
+    );
 
 app.MapControllerRoute(
     name: "default",

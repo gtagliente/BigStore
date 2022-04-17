@@ -4,6 +4,8 @@
 // </auto-generated>
 //----------------------
 
+#nullable enable
+
 #pragma warning disable 108 // Disable "CS0108 '{derivedDto}.ToJson()' hides inherited member '{dtoBase}.ToJson()'. Use the new keyword if hiding was intended."
 #pragma warning disable 114 // Disable "CS0114 '{derivedDto}.RaisePropertyChanged(String)' hides inherited member 'dtoBase.RaisePropertyChanged(String)'. To make the current member override that implementation, add the override keyword. Otherwise add the new keyword."
 #pragma warning disable 472 // Disable "CS0472 The result of the expression is always 'false' since a value of type 'Int32' is never equal to 'null' of type 'Int32?'
@@ -13,7 +15,7 @@
 #pragma warning disable 3016 // Disable "CS3016 Arrays as attribute arguments is not CLS-compliant"
 #pragma warning disable 8603 // Disable "CS8603 Possible null reference return"
 
-namespace MyNamespace
+namespace BigStoreProxy
 {
     using System = global::System;
 
@@ -441,7 +443,7 @@ namespace MyNamespace
         {
             if (response == null || response.Content == null)
             {
-                return new ObjectResponseResult<T>(default(T), string.Empty);
+                return new ObjectResponseResult<T>(default(T)!, string.Empty);
             }
 
             if (ReadResponseAsString)
@@ -450,7 +452,7 @@ namespace MyNamespace
                 try
                 {
                     var typedBody = Newtonsoft.Json.JsonConvert.DeserializeObject<T>(responseText, JsonSerializerSettings);
-                    return new ObjectResponseResult<T>(typedBody, responseText);
+                    return new ObjectResponseResult<T>(typedBody!, responseText);
                 }
                 catch (Newtonsoft.Json.JsonException exception)
                 {
@@ -468,7 +470,7 @@ namespace MyNamespace
                     {
                         var serializer = Newtonsoft.Json.JsonSerializer.Create(JsonSerializerSettings);
                         var typedBody = serializer.Deserialize<T>(jsonTextReader);
-                        return new ObjectResponseResult<T>(typedBody, string.Empty);
+                        return new ObjectResponseResult<T>(typedBody!, string.Empty);
                     }
                 }
                 catch (Newtonsoft.Json.JsonException exception)
@@ -479,7 +481,7 @@ namespace MyNamespace
             }
         }
 
-        private string ConvertToString(object value, System.Globalization.CultureInfo cultureInfo)
+        private string ConvertToString(object? value, System.Globalization.CultureInfo cultureInfo)
         {
             if (value == null)
             {
@@ -529,22 +531,22 @@ namespace MyNamespace
     public partial class Category
     {
         [Newtonsoft.Json.JsonProperty("categoryId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int CategoryId { get; set; }
+        public int? CategoryId { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Description { get; set; }
+        public string? Description { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("isRoot", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsRoot { get; set; }
+        public bool? IsRoot { get; set; } = default!;
 
-        [Newtonsoft.Json.JsonProperty("categoryHierarchyChildCategoryNavigation", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public CategoryHierarchy CategoryHierarchyChildCategoryNavigation { get; set; }
+        [Newtonsoft.Json.JsonProperty("categoryHierarchyChildCategoryNavigation", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public CategoryHierarchy? CategoryHierarchyChildCategoryNavigation { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("categoryHierarchyFatherCategoryNavigations", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<CategoryHierarchy> CategoryHierarchyFatherCategoryNavigations { get; set; }
+        public System.Collections.Generic.ICollection<CategoryHierarchy>? CategoryHierarchyFatherCategoryNavigations { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("products", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<Product> Products { get; set; }
+        public System.Collections.Generic.ICollection<Product>? Products { get; set; } = default!;
 
     }
 
@@ -552,19 +554,19 @@ namespace MyNamespace
     public partial class CategoryHierarchy
     {
         [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int Id { get; set; }
+        public int? Id { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("fatherCategory", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FatherCategory { get; set; }
+        public int? FatherCategory { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("childCategory", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int ChildCategory { get; set; }
+        public int? ChildCategory { get; set; } = default!;
 
-        [Newtonsoft.Json.JsonProperty("childCategoryNavigation", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public Category ChildCategoryNavigation { get; set; }
+        [Newtonsoft.Json.JsonProperty("childCategoryNavigation", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public Category? ChildCategoryNavigation { get; set; } = default!;
 
-        [Newtonsoft.Json.JsonProperty("fatherCategoryNavigation", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public Category FatherCategoryNavigation { get; set; }
+        [Newtonsoft.Json.JsonProperty("fatherCategoryNavigation", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public Category? FatherCategoryNavigation { get; set; } = default!;
 
     }
 
@@ -572,28 +574,28 @@ namespace MyNamespace
     public partial class Discount
     {
         [Newtonsoft.Json.JsonProperty("discountId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int DiscountId { get; set; }
+        public int? DiscountId { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("productId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int ProductId { get; set; }
+        public int? ProductId { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Name { get; set; }
+        public string? Name { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("fromDate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset? FromDate { get; set; }
+        public System.DateTimeOffset? FromDate { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("toDate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset? ToDate { get; set; }
+        public System.DateTimeOffset? ToDate { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("discountPercentage", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int DiscountPercentage { get; set; }
+        public int? DiscountPercentage { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("enabled", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? Enabled { get; set; }
+        public bool? Enabled { get; set; } = default!;
 
-        [Newtonsoft.Json.JsonProperty("product", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public Product Product { get; set; }
+        [Newtonsoft.Json.JsonProperty("product", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public Product? Product { get; set; } = default!;
 
     }
 
@@ -601,25 +603,25 @@ namespace MyNamespace
     public partial class MenuDiscount
     {
         [Newtonsoft.Json.JsonProperty("menuId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int MenuId { get; set; }
+        public int? MenuId { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Name { get; set; }
+        public string? Name { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("fromDate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset? FromDate { get; set; }
+        public System.DateTimeOffset? FromDate { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("toDate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset? ToDate { get; set; }
+        public System.DateTimeOffset? ToDate { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("discountPercentage", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int DiscountPercentage { get; set; }
+        public int? DiscountPercentage { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("enabled", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? Enabled { get; set; }
+        public bool? Enabled { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("pOrders", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<POrder> POrders { get; set; }
+        public System.Collections.Generic.ICollection<POrder>? POrders { get; set; } = default!;
 
     }
 
@@ -627,28 +629,28 @@ namespace MyNamespace
     public partial class POrder
     {
         [Newtonsoft.Json.JsonProperty("orderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int OrderId { get; set; }
+        public int? OrderId { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("productOrMenu", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int ProductOrMenu { get; set; }
+        public int? ProductOrMenu { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("date", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Date { get; set; }
+        public System.DateTimeOffset? Date { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("updateDate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset UpdateDate { get; set; }
+        public System.DateTimeOffset? UpdateDate { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("orderState", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string OrderState { get; set; }
+        public string? OrderState { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("isMenu", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool IsMenu { get; set; }
+        public bool? IsMenu { get; set; } = default!;
 
-        [Newtonsoft.Json.JsonProperty("productOrMenu1", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public Product ProductOrMenu1 { get; set; }
+        [Newtonsoft.Json.JsonProperty("productOrMenu1", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public Product? ProductOrMenu1 { get; set; } = default!;
 
-        [Newtonsoft.Json.JsonProperty("productOrMenuNavigation", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public MenuDiscount ProductOrMenuNavigation { get; set; }
+        [Newtonsoft.Json.JsonProperty("productOrMenuNavigation", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public MenuDiscount? ProductOrMenuNavigation { get; set; } = default!;
 
     }
 
@@ -656,28 +658,28 @@ namespace MyNamespace
     public partial class Product
     {
         [Newtonsoft.Json.JsonProperty("productId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int ProductId { get; set; }
+        public int? ProductId { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Name { get; set; }
+        public string? Name { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("details", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Details { get; set; }
+        public string? Details { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("price", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double Price { get; set; }
+        public double? Price { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("categoryId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int CategoryId { get; set; }
+        public int? CategoryId { get; set; } = default!;
 
-        [Newtonsoft.Json.JsonProperty("category", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public Category Category { get; set; }
+        [Newtonsoft.Json.JsonProperty("category", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public Category? Category { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("discounts", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<Discount> Discounts { get; set; }
+        public System.Collections.Generic.ICollection<Discount>? Discounts { get; set; } = default!;
 
         [Newtonsoft.Json.JsonProperty("pOrders", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<POrder> POrders { get; set; }
+        public System.Collections.Generic.ICollection<POrder>? POrders { get; set; } = default!;
 
     }
 
@@ -688,11 +690,11 @@ namespace MyNamespace
     {
         public int StatusCode { get; private set; }
 
-        public string Response { get; private set; }
+        public string? Response { get; private set; }
 
         public System.Collections.Generic.IReadOnlyDictionary<string, System.Collections.Generic.IEnumerable<string>> Headers { get; private set; }
 
-        public ApiException(string message, int statusCode, string response, System.Collections.Generic.IReadOnlyDictionary<string, System.Collections.Generic.IEnumerable<string>> headers, System.Exception innerException)
+        public ApiException(string message, int statusCode, string? response, System.Collections.Generic.IReadOnlyDictionary<string, System.Collections.Generic.IEnumerable<string>> headers, System.Exception? innerException)
             : base(message + "\n\nStatus: " + statusCode + "\nResponse: \n" + ((response == null) ? "(null)" : response.Substring(0, response.Length >= 512 ? 512 : response.Length)), innerException)
         {
             StatusCode = statusCode;
@@ -711,7 +713,7 @@ namespace MyNamespace
     {
         public TResult Result { get; private set; }
 
-        public ApiException(string message, int statusCode, string response, System.Collections.Generic.IReadOnlyDictionary<string, System.Collections.Generic.IEnumerable<string>> headers, TResult result, System.Exception innerException)
+        public ApiException(string message, int statusCode, string? response, System.Collections.Generic.IReadOnlyDictionary<string, System.Collections.Generic.IEnumerable<string>> headers, TResult result, System.Exception? innerException)
             : base(message, statusCode, response, headers, innerException)
         {
             Result = result;

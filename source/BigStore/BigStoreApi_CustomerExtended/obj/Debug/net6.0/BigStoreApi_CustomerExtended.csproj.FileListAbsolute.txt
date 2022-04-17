@@ -70,3 +70,7 @@ C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStor
 C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreApi_CustomerExtended\obj\Debug\net6.0\BigStoreApi_CustomerExtended.pdb
 C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreApi_CustomerExtended\obj\Debug\net6.0\BigStoreApi_CustomerExtended.genruntimeconfig.cache
 C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreApi_CustomerExtended\obj\Debug\net6.0\ref\BigStoreApi_CustomerExtended.dll
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreApi_CustomerExtended\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreApi_CustomerExtended\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreApi_CustomerExtended\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreApi_CustomerExtended\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
