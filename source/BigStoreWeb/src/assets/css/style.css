@@ -2299,7 +2299,7 @@ span.last {
     font-size: 1.5em;
 }
 }
-@media(max-width:991px){
+@media(max-width:800px){
 .modal-dialog {
     width: 720px;
 }
@@ -2308,7 +2308,7 @@ span.last {
     font-size: 2.5em;
 }
 .m-wthree {
-    width: 50%;
+    width: 30%;
     float: left;
     margin-bottom: 2em;
 }
@@ -2817,7 +2817,7 @@ a.at-in {
     padding: 3em 0 0;
 }
 }
-@media(max-width:414px){
+@media(max-width:450px){
 .cart {
     width: 27%;
 }
