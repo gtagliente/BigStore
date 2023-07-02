@@ -1,23 +1,49 @@
-using BigStoreCore.Interfaces;
-using BigStoreCore.Logic;
+using BigStoreCore.Interface;
+using BigStoreCore.Logics;
 using BigStoreCore.Models;
 using BigStoreCore_CustomerExtended;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
+Host.CreateDefaultBuilder(args)
+    .ConfigureWebHostDefaults(wb =>
+    {
+        wb.UseIISIntegration();
+        wb.UseKestrel();
+        //wb./*UseStartup*/<Startup>();
+        wb.UseSetting("detailedErrors", "true");
+        wb.CaptureStartupErrors(true);
+        wb.UseIISIntegration();
+        wb.UseStartup<StartupBase>();
+    }
+    );
+
+var config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(config)
+    .CreateLogger();
 //builder.Services.AddSingleton < IMainBusinessLayer,MockBusinessLayer > ();
+builder.Host.UseSerilog(Log.Logger);
 builder.Services.AddScoped<IMainBusinessLayer, EFBusinessLayer_CustomerExtended>();
 
 builder.Services.AddDbContext<BigStoreContext>(options =>
 {
-    options.UseSqlServer(new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetSection("ConnectionStrings")["DBConnection"]);
+    options.UseSqlServer(config.GetSection("ConnectionStrings")["DBConnection"]);
 });
 
-//builder.Services.AddControllersWithViews()
-//    .AddNewtonsoftJson(options =>
-//    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-//);
+
+//builder.Services.AddScoped<Product>( options => { 
+//    Product product = new Product();
+//    product.Name = "Name";
+//    return product; });
+
+builder.Services.AddControllers().AddJsonOptions(x =>
+   x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSwaggerGen(
@@ -26,13 +52,18 @@ builder.Services.AddSwaggerGen(
         c.UseAllOfToExtendReferenceSchemas();
     } );
 
+builder.Services.AddCors();
 var app = builder.Build();
+
+app.UseDeveloperExceptionPage();
 
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseSerilogRequestLogging();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

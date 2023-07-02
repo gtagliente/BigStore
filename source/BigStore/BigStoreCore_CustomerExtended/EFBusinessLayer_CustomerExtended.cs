@@ -1,5 +1,5 @@
-﻿using BigStoreCore.Interfaces;
-using BigStoreCore.Logic;
+﻿using BigStoreCore.Interface;
+using BigStoreCore.Logics;
 using BigStoreCore.Models;
 using Microsoft.EntityFrameworkCore;
 

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreClient\\BigStoreClient.csproj": {}
+    "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreClient\\BigStoreClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreClient\\BigStoreClient.csproj": {
+    "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreClient\\BigStoreClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreClient\\BigStoreClient.csproj",
+        "projectUniqueName": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreClient\\BigStoreClient.csproj",
         "projectName": "BigStoreClient",
-        "projectPath": "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreClient\\BigStoreClient.csproj",
-        "packagesPath": "C:\\Users\\Samsung\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Samsung\\Documents\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreClient\\obj\\",
+        "projectPath": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreClient\\BigStoreClient.csproj",
+        "packagesPath": "C:\\Users\\gianl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\BigStore\\source\\BigStore\\BigStoreClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Samsung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gianl\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -51,7 +51,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -60,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

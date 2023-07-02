@@ -1,0 +1,14 @@
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore\bin\Release\net6.0\BigStoreCore.deps.json
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore\bin\Release\net6.0\BigStoreCore.runtimeconfig.json
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore\bin\Release\net6.0\BigStoreCore.dll
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore\bin\Release\net6.0\BigStoreCore.pdb
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore\obj\Release\net6.0\BigStoreCore.csproj.AssemblyReference.cache
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore\obj\Release\net6.0\BigStoreCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore\obj\Release\net6.0\BigStoreCore.AssemblyInfoInputs.cache
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore\obj\Release\net6.0\BigStoreCore.AssemblyInfo.cs
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore\obj\Release\net6.0\BigStoreCore.csproj.CoreCompileInputs.cache
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore\obj\Release\net6.0\BigStoreCore.dll
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore\obj\Release\net6.0\refint\BigStoreCore.dll
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore\obj\Release\net6.0\BigStoreCore.pdb
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore\obj\Release\net6.0\BigStoreCore.genruntimeconfig.cache
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore\obj\Release\net6.0\ref\BigStoreCore.dll

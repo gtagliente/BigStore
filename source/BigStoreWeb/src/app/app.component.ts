@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import { BigStoreClientService,Client } from './big-store-client.service';
+ import { Client } from './big-store-client.service';
+ import { DesignKitComponent } from './design-kit/design-kit.component';
 
 
 @Component({
@@ -18,18 +19,18 @@ export class AppComponent implements OnInit{
    // this.service = new BigStoreClientComponent();
 
      //this.service = new Client("https://localhost:7008");
-     console.log('Client: '+this.clientService.baseUrl);
+    //  console.log('Client: '+this.clientService.baseUrl);
      
-     console.log('Products  : ');
-     this.clientService.products().then(
-      (val) => console.log( val),
-      (err) => console.log(err)
-    );
+    //  console.log('Products  : ');
+    //  this.clientService.products().then(
+    //   (val) => console.log( val),
+    //   (err) => console.log(err)
+    // );
 
-    console.log('Categories: ');
-    this.clientService.categories().then(
-      (val) => console.log( val),
-      (err) => console.log(err)
-    );
+    // console.log('Categories: ');
+    // this.clientService.categories().then(
+    //   (val) => console.log( val),
+    //   (err) => console.log(err)
+    // );
     }
 }

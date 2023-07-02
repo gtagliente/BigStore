@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using BigStoreCore.Interfaces;
+using BigStoreCore.Interface;
 using BigStoreCore.Models;
 
 namespace BigStoreApi.Controllers
@@ -15,14 +15,14 @@ namespace BigStoreApi.Controllers
             _layer = layer;
         }
 
-        //[HttpGet(Name ="Products")]
+        [ApiExplorerSettings(IgnoreApi = true)]
         [HttpGet,Route("Products")]
         public async Task<List<Product>> GetProducts()
         {
             return await _layer.GetProducts();
         }
 
-        //[HttpGet(Name = "Categories")]
+        [ApiExplorerSettings(IgnoreApi = true)]
         [HttpGet,Route("Categories")]
         public async Task<List<Category>> GetCategories()
         {

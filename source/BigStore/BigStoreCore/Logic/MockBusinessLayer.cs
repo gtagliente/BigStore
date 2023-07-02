@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BigStoreCore.Interfaces;
+using BigStoreCore.Interface;
 using BigStoreCore.Models;
 
-namespace BigStoreCore.Logic
+namespace BigStoreCore.Logics
 {
-    public class MockBusinessLayer : IMainBusinessLayer
+    public class MockBusinessLayer // : IMainBusinessLayer
     {
         public async Task<List<Product>> GetProducts()
         {
@@ -33,6 +33,11 @@ namespace BigStoreCore.Logic
         }
 
         public Task<List<Discount>> GetDiscounts()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Dispose()
         {
             throw new NotImplementedException();
         }

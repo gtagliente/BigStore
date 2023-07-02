@@ -1,0 +1,15 @@
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore_CustomerExtended\bin\Release\net6.0\BigStoreCore_CustomerExtended.deps.json
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore_CustomerExtended\bin\Release\net6.0\BigStoreCore_CustomerExtended.dll
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore_CustomerExtended\bin\Release\net6.0\BigStoreCore_CustomerExtended.pdb
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore_CustomerExtended\bin\Release\net6.0\BigStoreCore.dll
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore_CustomerExtended\bin\Release\net6.0\BigStoreCore.pdb
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore_CustomerExtended\obj\Release\net6.0\BigStoreCore_CustomerExtended.csproj.AssemblyReference.cache
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore_CustomerExtended\obj\Release\net6.0\BigStoreCore_CustomerExtended.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore_CustomerExtended\obj\Release\net6.0\BigStoreCore_CustomerExtended.AssemblyInfoInputs.cache
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore_CustomerExtended\obj\Release\net6.0\BigStoreCore_CustomerExtended.AssemblyInfo.cs
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore_CustomerExtended\obj\Release\net6.0\BigStoreCore_CustomerExtended.csproj.CoreCompileInputs.cache
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore_CustomerExtended\obj\Release\net6.0\BigStoreCore_CustomerExtended.csproj.CopyComplete
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore_CustomerExtended\obj\Release\net6.0\BigStoreCore_CustomerExtended.dll
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore_CustomerExtended\obj\Release\net6.0\refint\BigStoreCore_CustomerExtended.dll
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore_CustomerExtended\obj\Release\net6.0\BigStoreCore_CustomerExtended.pdb
+C:\Users\Samsung\Documents\Gianluca\Git_Sources\BigStore\source\BigStore\BigStoreCore_CustomerExtended\obj\Release\net6.0\ref\BigStoreCore_CustomerExtended.dll

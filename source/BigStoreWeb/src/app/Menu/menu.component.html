@@ -1,0 +1,25 @@
+<div class="tab-head ">
+	<nav class="nav-sidebar">
+		<ul class="nav tabs ">
+			<!--<li class="active"><a href="#tab1" data-toggle="tab">Staples</a></li>
+					  <li class=""><a href="#tab2" data-toggle="tab">Snacks</a></li> 
+					  <li class=""><a href="#tab3" data-toggle="tab">Fruits & Vegetables</a></li>  
+					  <li class=""><a href="#tab4" data-toggle="tab">Breakfast & Cereal</a></li>-->
+
+			<li *ngFor="let category of categories"><a
+					[routerLink]="['/MenuPanel',category.categoryId]">{{category.description}}</a></li>
+					<!-- [routerLink]="['MenuPanel/',category.categoryId]">{{category.description}}</a></li> -->
+					<br>
+					<li *ngFor="let category of subCategories"><a
+						[routerLink]="['/MenuPanel',category.categoryId]">{{category.description}}</a></li>
+
+		</ul>
+	</nav>
+
+</div>
+
+
+<div [@routeSlide]="routeTrigger$ | async" class="containerSlide">
+	<router-outlet></router-outlet>
+</div>
+

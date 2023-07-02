@@ -5,13 +5,14 @@ import { AppConfigService }       from './Config/app.config';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import { BigStoreClientService, Client } from './big-store-client.service';
+import {  Client } from './big-store-client.service';
 import {HttpClient, HttpClientModule, HttpHandler} from '@angular/common/http';
 import { MenuComponent } from './Menu/menu.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MenuPanelComponent } from './Menu/menu-panel/menu-panel.component';
 import { MenuItemComponent } from './Menu/menu-item/menu-item.component';
 import { AppRoutingModule } from './Routing/app-routing.module';
+import { DesignKitComponent } from './design-kit/design-kit.component';
 
 
 
@@ -27,7 +28,8 @@ import { AppRoutingModule } from './Routing/app-routing.module';
     AppComponent,
     MenuComponent,
     MenuPanelComponent,
-    MenuItemComponent
+    MenuItemComponent,
+    DesignKitComponent
   ],
   imports: [
     BrowserModule,

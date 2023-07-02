@@ -5,13 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BigStoreCore.Interfaces
+namespace BigStoreCore.Interface
 {
-    public interface IMainBusinessLayer
+    public interface IMainBusinessLayer: IDisposable
     {
         Task<List<Product>> GetProducts();
-        Task<List<Category>> GetCategories();
+        Task<List<Category>> GetCategories(bool getOnlyRoots=true);
         Task<List<MenuDiscount>> GetMenuDiscounts();
         Task<List<Discount>> GetDiscounts();
+        Task<IEnumerable<Category>> GetSubCategories(int v, bool isRecursive = false);
     }
 }

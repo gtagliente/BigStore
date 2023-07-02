@@ -8,5 +8,6 @@ namespace BigStoreCore.ViewModels
 {
     internal class ProductViewModel
     {
+
     }
 }
